@@ -1,0 +1,165 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+%\usepackage[text={7in,10in},centering]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{multirow}
+%\usepackage{tabularx, colortbl}
+\usepackage[usenames,dvipsnames]{color}
+\pagestyle{empty}
+
+% global noindent
+\parindent=0pt
+
+\newenvironment{topic}[1]{
+\begin{minipage}[t]{0.12\linewidth}\begin{flushleft}\begin{flushright}\textbf{#1}\end{flushright}\end{flushleft}\end{minipage}\hspace{4mm}\vrule\hspace{4mm}\begin{minipage}[t]{0.82\linewidth}\begin{flushright}\begin{flushleft}
+}{
+\end{flushleft}\end{flushright}\end{minipage}\vspace{12mm}
+}
+
+\newenvironment{tinytopic}[1]{
+\begin{minipage}[t]{0.1\linewidth}\begin{flushleft}\begin{flushright}\textbf{#1}\end{flushright}\end{flushleft}\end{minipage}\hspace{4mm}\hspace{4mm}\begin{minipage}[t]{0.6\linewidth}\begin{flushright}\begin{flushleft}
+}{
+\end{flushleft}\end{flushright}\end{minipage}
+}
+
+\renewcommand{\labelitemi}{$\cdot$}
+
+\definecolor{grey}{gray}{0.92}
+
+% and the actual content starts here
+\begin{document}
+
+%blah blah opening
+%
+%I am a recent graduate from the University of Oregon computer science
+%program, and am looking for a job in the local tech industry. My friends
+%Andrew Bruce and Austin Lally have both encouraged me to apply for a
+%position as a Django developer. I am also pleased to claim several
+%aquantainces that work or have worked for Concentric Sky, and all of
+%them have told me nothing but great things about your company.
+%
+%In addition to my general CS experience, I have spent the last two years
+%working as a web developer for the University, and most of my time has
+%been spent exploring Node.js and other exciting new web technologies. In
+%that time, I have been a part of the team that produced the
+%Student Guide mobile site, the lead developer for the renovated Outdoor
+%Program web site, and lead/sole developer on several other minor
+%projects.
+%
+%Although I have used python extensively in the past, I have only just
+%recently begun exploring Django. I am quite excited to learn a new
+%paradigm of web development; to learn new ways I can apply my
+%experience.
+%
+%Thank you for your time.
+
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+  \multirow{2}{*}{\textbf{\Huge Elijah Hamovitz}} & \textbf{elijah.hamovitz@gmail.com} \\
+  & 1456 City View, Eugene, OR $\cdot$ (541) 868-5980 
+\end{tabular*}
+
+\vspace{2mm}
+\hrule
+\colorbox{grey}{
+  \begin{minipage}{0.978\linewidth}
+    \vspace{2mm}
+    Recent graduate, web developer, Node.js fanboy, and eager code
+    monkey.
+    %There is no teacher but the enemy. No one but the enemy will tell you what the
+    %enemy is going to do. No one but the enemy will teach you how to destroy and
+    %conquer. Only the enemy shows you where you are weak. Only the enemy shows you
+    %where he is strong.
+    \vspace{2mm}
+  \end{minipage}
+}
+\hrule
+\vspace{8mm}
+
+\begin{topic}{Education}
+  B.S. in Computer and Information Science, University of Oregon
+  \begin{itemize}
+    \item 3.97 GPA
+    \item Accepted by the Clark Honors College
+    \item Member of the National Society of Collegiate Scholars and Upsilon Pi Epsilon honor societies
+    \item National Merit Scholar
+    \item Recipient of the 2009 Erwin \& Gertrude Juilfs Scholarship
+    \item 2008 SMART Scholarship First Round Finalist
+  \end{itemize}
+\end{topic}
+
+\begin{topic}{Experience}
+  \begin{description}
+    \item[EMU Marketing $\cdot$ Feb 2010 - current]\hfill \\
+    I worked for nearly two years for the University of Oregon Student Union's
+    Marketing department as a web developer on a small team. In my time
+    there, I have developed several websites using some new and exciting
+    web technologies, including Node.js and MongoDB. I have worked on
+    both group and individual projects, instructed designers and new
+    developers on the basic use of tools such as git and command-line
+    interaction, and managed and maintained servers.
+    %project involves building a web content management system in PHP.
+
+    \item[OHSU Summer REU Program $\cdot$ Summer 2009]\hfill \\
+    I spent Summer 2009 working as a paid intern of the Oregon Graduate
+    Institute at Oregon Health and Science University. During my ten
+    weeks in the program, I developed an ambitious python program which
+    used finite-state transducers to improve the accuracy of a natural
+    language parsing pipeline.
+    %transformation-based learning system to improve parser accuracy in a
+    %natural-language parsing pipeline. I used finite-state transducers
+    %to improve the output of a particular stage in the pipeline, with
+    %the intention of greatly improving accuracy down the line.
+    I eventually co-wrote a paper on the system.
+
+    \item[Buzz Monkey $\cdot$ June 2008 - June 2009] \hfill \\
+    During the 2008-2009 school year, I worked as a paid design intern
+    for a local video game studio.
+    I worked with a total of four different teams on two different
+    games, and was given the opportunity to experience both the Scrum
+    and RAD development methodologies.
+    %I had a great experience working as
+    %part of several different teams with multiple different management,
+    %organization, and meeting styles.
+    %Currently hold a permanent position as a paid intern in the growing
+    %design department; responsible for assistance in software
+    %development and refinement. Was offered a position as a full-time
+    %employee, but turned it down to continue my studies.  Internship is
+    %currently extended indefinitely.
+  \end{description}
+\end{topic}
+
+\begin{topic}{Technology}
+  \begin{description}
+    \item[Programming \& Markup Languages] \hfill \\
+    \vspace{1em}
+    \begin{tabular}{r    l}
+      \vspace{1em}
+      \textbf{Proficient} & Java, C, JavaScript, HTML, \LaTeX, CSS \\
+      \textbf{Familiar} & Python, Perl, PHP, XML, Ruby, C++
+    \end{tabular}
+    \item[Development Tools \& Architectures] \hfill \\
+    \vspace{1em}
+    \begin{tabular}{r    l}
+      \vspace{1em}
+      \textbf{Proficient} & Nginx, Apache, Node.js, Git, Vim \\
+      \textbf{Familiar} & Django, Wordpress
+    \end{tabular}
+
+    \item[Other Software] \hfill \\
+    \vspace{1em}
+    \begin{tabular}{r    l}
+      \vspace{1em}
+      \textbf{Database} & MongoDB, MySQL \\
+      \textbf{OS} & Linux, Mac OS X, FreeBSD, Solaris
+    \end{tabular}
+  \end{description}
+\end{topic}
+
+\end{document}
