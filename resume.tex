@@ -2,7 +2,7 @@
 % vim:set ft=tex spell:
 
 \documentclass[10pt,letterpaper]{article}
-\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[letterpaper,margin=0.5in]{geometry}
 %\usepackage[text={7in,10in},centering]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
@@ -19,6 +19,9 @@
 \parindent=0pt
 
 \titleformat{\section}{\large\raggedright}{}{0em}{}[\titlerule]
+
+%\titlespacing*{\section}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+%\titlespacing*{\section}{0pt}{0pt}{0pt}
 
 \newenvironment{topic}[1]{
 \begin{minipage}[t]{0.15\linewidth}\begin{flushleft}\begin{flushright}\textbf{#1}\end{flushright}\end{flushleft}\end{minipage}\hspace{1em}\vrule\hspace{1em}\begin{minipage}[t]{0.80\linewidth}\begin{flushright}\begin{flushleft}
@@ -94,27 +97,28 @@
 \section{Technology}
 \begin{topic}{\textnormal{Programming and Markup Languages}} \hfill \\
   \begin{tabular}{r l}
-    \textbf{Proficient} & C, \ CSS, \ HTML, \ Java, \ JavaScript, \ \LaTeX \\
-    \textbf{Familiar} & C++, \ Python, \ Perl, \ PHP, \ XML, \ Ruby
+    \textbf{Experienced} & CSS, \ HTML, \ JavaScript, \ Python \\
+    \textbf{Educated} & C++, \ C, \ Java, \ Perl, \ Ruby
   \end{tabular}
   \newline
 \end{topic}
 
 \begin{topic}{\textnormal{Development Tools and Architectures}} \hfill \\
   \begin{tabular}{r l}
-    \textbf{Proficient} & Apache, \ Git, \ Nginx, \ Node.js, \ Vim \\
-    \textbf{Familiar} &  Django, \ Eclipse, \ Wordpress
+    \textbf{Experienced} & Apache, \ Bash, \ Django, \ Flask, \ Git, \ Nginx, \ Node.js, \ Vim \\
+    \textbf{Educated} & Eclipse, \ Wordpress
   \end{tabular}
   \newline
 \end{topic}
 
 \begin{topic}{\textnormal{Other Software}}
   \begin{tabular}{r l}
-    \textbf{Proficient} &  MongoDB, \ MySQL \\
-    \textbf{Familiar} & FreeBSD, \ Linux, \ Mac OS X, \ Solaris
+    \textbf{Experienced} &  Linux, \ Mac OS X, \ MongoDB, \ MySQL, \ PostgreSQL \\
+    \textbf{Educated} & FreeBSD, \ Solaris
   \end{tabular}
 \end{topic}
 
+\vspace{-1.5em}
 \section{Education}
 \begin{topic}{University \\ of Oregon}
   B.S. in Computer and Information Science
@@ -122,77 +126,70 @@
     \setlength{\itemsep}{0em}
     \setlength{\parskip}{0em}
     \item 3.97 GPA
-    %\item Accepted by the Clark Honors College
+    \item Attended the Clark Honors College
     \item Member of National Society of Collegiate Scholars and Upsilon Pi Epsilon
     \item National Merit Scholar
     \item Recipient of the 2009 Erwin \& Gertrude Juilfs Scholarship
     %\item 2008 SMART Scholarship First Round Finalist
   \end{itemize}
+  During my time at the University, I also participated in several programming competitions
+  and two undergraduate research projects, and was active in our department chapters of the
+  ACM and UPE.
 \end{topic}
 
+\vspace{-2em}
 \section{Experience}
+
+\begin{topic}{Hallspot}
+    Lead Developer, \ May 2013 - present
+
+    \vspace{1em}
+
+    As the lead developer of a small startup, I had the
+    opportunity to be involved in every phase of software development,
+    from conception to implementation to support. We built a
+    robust Flask API that powered mobile apps for both Android and iOS,
+    as well as a web frontend written in Ember.js.
+\end{topic}
+\vspace{1em}
+
+\begin{topic}{Concentric Sky}
+    Web Developer, \ April 2010 - May 2013
+
+    \vspace{1em}
+
+    At Concentric Sky, I developed several websites using Django,
+    Apache, Backbone.js, and many other popular web development tools. I
+    also worked on some complex internal libraries relating to
+    everything from automated form generation for hierarchically related
+    models to a suite of search tools for database models.
+\end{topic}
+
+\vspace{1em}
 \begin{topic}{EMU Marketing}
 
-  Web Developer, \ Feb 2010 - current
-  %Since February 2010, I have worked for the University of Oregon Student Union's
-  %Marketing department as a web developer on a small team.
+  Web Developer, \ Feb 2010 - May 2012 
 
   \vspace{1em}
   
-  In my time there, I have developed several websites using some new and
-  exciting web technologies, including Node.js and MongoDB.
-
-  \vspace{1em}
-  
-  I have worked on both group and individual projects, instructed designers and
-  new developers on the basic use of tools such as git and command-line
-  interaction, and managed and maintained servers.
+  In my time there, I developed several websites using some new and
+  exciting web technologies, including Node.js and MongoDB. I had the
+  opportunity to write low-level framework libraries and learned how to
+  deal with complex, fully asynchronous systems.
 \end{topic}
 
-\vspace{1.5em}
+\vspace{1em}
 \begin{topic}{OHSU}
-  Paid Research Intern, \ Summer 2009
+    Paid Research Intern, \ Summer 2009
 
-  \vspace{1em}
+    \vspace{1em}
 
-  I spent ten weeks working for the Oregon Graduate Institute at Oregon Health
-  and Science University as part of their Research Experience for
-  Undergraduates program.
-  
-  \vspace{1em}
-  
-  During my time there, I developed an ambitious python program which used
-  finite-state transducers to improve the accuracy of a natural language
-  parsing pipeline.
-
-  \vspace{1em}
-
-  I eventually co-wrote a paper on the system.
+    I spent ten weeks working for the Oregon Graduate Institute at
+    Oregon Health and Science University as part of their Research
+    Experience for Undergraduates program. I was able to develop an
+    ambitious python program which used finite-state transducers to
+    improve the accuracy of a natural language parsing pipeline, and
+    eventually co-wrote a paper.
 \end{topic}
-  %transformation-based learning system to improve parser accuracy in a
-  %natural-language parsing pipeline. I used finite-state transducers
-  %to improve the output of a particular stage in the pipeline, with
-  %the intention of greatly improving accuracy down the line.
-
-\vspace{1.5em}
-\begin{topic}{Buzz Monkey}
-  Paid Design Intern, \ June 2008 - June 2009
-  %From June 2008 to June 2009, I worked as a paid design intern
-  %for a local video game studio.
-
-  \vspace{1em}
-
-  I worked with a total of four different teams on two different
-  games, and was given the opportunity to experience both the Scrum
-  and RAD development methodologies.
-\end{topic}
-  %I had a great experience working as
-  %part of several different teams with multiple different management,
-  %organization, and meeting styles.
-  %Currently hold a permanent position as a paid intern in the growing
-  %design department; responsible for assistance in software
-  %development and refinement. Was offered a position as a full-time
-  %employee, but turned it down to continue my studies.  Internship is
-  %currently extended indefinitely.
 
 \end{document}
