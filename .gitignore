@@ -1,4 +1,4 @@
 samples
 *.aux
 *.log
-*.pdf
+*.dvi
